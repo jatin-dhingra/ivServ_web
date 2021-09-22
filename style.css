@@ -26,15 +26,21 @@ body {
     margin: .5rem;
     padding-left:1rem;
     font-size:30px;
+    font-weight: bolder;
+    padding-bottom:1rem;
 }
+/* .navbar img
+{
+    width: 60px;
+    height: 60px;
+    margin-left:10px;
+    margin-right:0px
+} */
 
 .navbar-links {
     height: 100%;
     width:50%;
- 
-    
    
-    
 }
 
 .navbar-links ul {
@@ -51,7 +57,7 @@ body {
     width:50%;
     text-align: center;
     transition: all .5s ;
-    margin: 0 6px;
+    /* margin: 0 6px; */
 }
 
 .navbar-links li a {
@@ -63,9 +69,13 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color: #ffcb77;
+    background-color: black;
     transform: translateY(3px);
     
+    
+}
+.navbar-links li a:hover {
+    color: white;
 }
 
 .toggle-button {
