@@ -2,15 +2,17 @@
 * {
     box-sizing: border-box;
     
+    
    
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color:#ffffff; 
+    /* background-color:#b5179e;  */
     font-family: 'Work Sans', sans-serif;
     transition: all  .9s;
+    
     
     
 
@@ -21,39 +23,95 @@ body {
     
 } */
 
+.twp-video-background {
+  
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    
+    box-sizing: border-box; 
+    opacity: 0.2;
+}
+.twp-video-foreground,
+.twp-video-background video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:90vh;
+    pointer-events: none;
+    box-sizing: border-box;
+    object-fit: cover; 
+}
+
+.twp-video-foreground{
+    padding-bottom: 56.25%;
+    box-sizing: border-box; 
+}
+
+.twp-video-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    
+    box-sizing: border-box; 
+}
+
 .home
 {
     background-color:white;
     width: 100%;
-    height: 100vh;
-    border:1px solid white;
+    height:100vh;
+    /* border:1px solid white; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content:space-around; */
     align-items: center;
-}
-.home
-{
-    font-size: 50px;
+    font-size: 45px;
     padding:0 10px;
-    padding-bottom:30px;
+    /* padding-bottom:30px; */
     font-weight: 500;
+    
+    /* overflow: hidden; */
 }
-.intro
+
+.home div{
+    text-align: center;
+}
+
+#homemain .intro
 {
+    background-color:white;
+    padding:0;
+    margin-top:10%;
     text-align:center;
+    
 }
 .intro .bigone
 {
-    font-size:200px;
+    font-size:100px;
     font-weight:900;
     color:#ffd60a;
 }
 
-.conclusion
+.home .conclusion
 {
     text-align:center;
+    margin-top: 10%;
 }
+
+/* #homemain
+{
+    background-color:white;
+}
+
+
+
+
+ */
 
 
 .about{
@@ -108,12 +166,19 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    
+}
+.button
+{
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
 .button button
 {
     font-size: 25px;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    border-left: 0;
+    border-right: 0;
     padding:10px;
     background-color: white;
     transition: all .5s ease;
@@ -121,13 +186,32 @@ body {
     border-color: black;
  
 }
+
+
 .button button:hover
 {
     border-color: black;
     background-color: black;
     color:#ffffff;
     cursor: pointer;
+    cursor: pointer;
+    
+    box-shadow: 0 0.5em 0.5em -0.4em #ffd60a;
+    color:#ffd60a;
+    transform:translateY(-.2em);
+    
+   
+    
 } 
+
+/* ------------------------------------------ */
+
+
+  
+  
+
+
+/* ------------------------------------------------- */
 
 /* content section */
 
@@ -135,6 +219,11 @@ body {
 {
     display:none;
 } */
+
+#allcontent .inside-content3
+{
+    text-align:center;
+}
 
 #contentmain
 {
@@ -157,7 +246,7 @@ body {
     margin:30px 25px;
     padding:2%;
     text-align:center;
-    border:3px solid black;
+    border:3px solid #f1faee;
     border-radius: 28px;
     transition:all .5s ease-out;
     
@@ -166,8 +255,9 @@ body {
 #contentmain .content1:hover
 {
     cursor: pointer;
-    color:white;
-    background-color: black;
+    color:black;
+    font-weight: bold;
+    /* background-color: black; */
     transform:translateY(-2px);
 }
 
@@ -192,7 +282,7 @@ body {
         margin:10px 25px;
     padding:25px;
     text-align:center;
-    border:3px solid black;
+    border:3px solid f1faee;
     border-radius: 28px;
     }
 }
@@ -216,10 +306,10 @@ body {
 
 #contentmain1 div
 {
-    margin:30px 25px;
+    margin:10px 25px;
     padding:2%;
     text-align:center;
-    border:3px solid black;
+    border:3px solid #f1faee;
     border-radius: 28px;
     transition:all .5s ease-out;
     
@@ -228,8 +318,9 @@ body {
 #contentmain1 .content2:hover
 {
     cursor: pointer;
-    color:white;
-    background-color: black;
+    color:black;
+    font-weight:bold;
+    /* background-color: black; */
     transform:translateY(-2px);
 }
 
@@ -254,7 +345,7 @@ body {
         margin:10px 25px;
     padding:25px;
     text-align:center;
-    border:3px solid black;
+    border:3px solid f1faee;
     border-radius: 28px;
     }
 }
